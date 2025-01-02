@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>自动化默写</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+  </head>
+  <body>
+    <div id="message" style="display: none"></div>
+    <div id="container">
+      <div id="answer">
+        <h1>自动化默写</h1><h5 style="margin-top: 0;">Written by 梁皓文</h5>
+        <input type="file" id="file-input" accept=".docx" />
+        <div id="question">
+          <p id="chinese-text">请上传一个 .docx 文件开始。</p>
+          <input
+            class="input"
+            type="text"
+            id="answer-input"
+            placeholder="请输入对应的英文"
+          />
+          <button id="submit-button">提交</button>
+        </div>
+      </div>
+      <div id="list">
+        <h3>错题列表：</h3>
+        <div id="error-list">
+          <ul id="error-items"></ul>
+        </div>
+        <button id="retry-button">重做错题</button>
+        <button id="export-button">导出错题</button>
+      </div>
+    </div>
+  </body>
+</html>
